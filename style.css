@@ -1,0 +1,171 @@
+.phone-container {
+    margin-top: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: blue;
+}
+
+nav {
+    display: flex;
+}
+
+nav img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav a {
+    height: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+a:hover,
+a:focus {
+    color: blue;
+    scale: 1.1;
+}
+
+.moving-van {
+    position: relative;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    width: 40%;
+
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.slideshow-container {
+    width: 50%;
+    height: 400px;
+}
+
+.imgSlide {
+    position: absolute;
+    width: 40%;
+    height: 400px;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        left: 1100px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .phone-container {
+        margin-top: 10px;
+        width: 100vw;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        margin: 10px auto;
+    }
+
+    nav img {
+        height: 20px;
+    }
+
+    nav a {
+        height: 20px;
+        font-size: 18px;
+    }
+
+    .moving-van {
+        height: 50px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    ul {
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+
+    }
+
+    li {
+        justify-content: space-around;
+        height: fit-content;
+    }
+
+    li img {
+        width: 30px;
+    }
+
+    .slideshow-container {
+        width: 90%;
+        height: 300px;
+    }
+    
+    .imgSlide {
+        width: 90%;
+        height: 400px;
+    }
+
+
+    @keyframes move {
+        0% {
+            left: 700px;
+        }
+
+        100% {
+            left: 0px;
+        }
+    }
+
+}

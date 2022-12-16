@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&V Lieferservice</title>
+    <meta
+      name="description"
+      content="Schnelle, zuverlässige Lieferung direkt bis in deine Wohnung"
+    />
+    <meta name="keywords" content="Lieferservice, Schnelle, München" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="phone-container">
+        <h1>D&V Lieferservice</h1>
+        <nav>
+          <a href="tel:01736560119"
+            ><img src="./images/phone-image.png" alt="phone image" />0173 65 60
+            119
+          </a>
+        </nav>
+      </div>
+      <img
+        class="moving-van"
+        src="./images/van-image.png"
+        alt="image of a van"
+      />
+    </header>
+    <main>
+      <ul>
+        <li>
+          <img src="./images/whatsapp-icon.png" alt="an descriptiv image" />
+          <h2>Einfache Bestellung per What`sApp oder Telefon</h2>
+        </li>
+        <li>
+          <img src="./images/list-image.png" alt="an descriptiv image" />
+          <h2>Deine Einkaufsliste, Wunsch-Laden & Lieferadresse angeben</h2>
+        </li>
+        <li>
+          <img src="./images/home-image.png" alt="an descriptiv image" />
+          <h2>
+            Schnelle, zuverlässige Lieferung direkt bis in deine Wohnung: z. B.
+            Brot, Obst, Getränkekästen
+          </h2>
+        </li>
+        <li>
+          <img src="./images/weight-image.png" alt="an descriptiv image" />
+          <h2>Auch schwere Lasten wie Baumarkt-Artikel bis zu 1 Tonne!</h2>
+        </li>
+        <li>
+          <img src="./images/payment-image.png" alt="an descriptiv image" />
+          <h2>Nur Barzahlung oder PayPal. Grundpauschale 10 € pro Auftrag</h2>
+        </li>
+      </ul>
+
+      <div class="slideshow-container">
+        <img
+          src="./images/image-1.jpg"
+          alt="image of our van in action"
+          class="imgSlide"
+        />
+        <img
+          src="./images/image-2.jpg"
+          alt="image of our van in action"
+          class="imgSlide"
+        />
+        <img
+          src="./images/image-3.jpg"
+          alt="image of our van in action"
+          class="imgSlide"
+        />
+        <img
+          src="./images/image-4.jpg"
+          alt="image of our van in action"
+          class="imgSlide"
+        />
+        <img
+          src="./images/image-5.jpg"
+          alt="image of our van in action"
+          class="imgSlide"
+        />
+        <img
+          src="./images/image-6.jpg"
+          alt="image of our van in action"
+          class="imgSlide"
+        />
+      </div>
+    </main>
+    <script>
+      const slideshowImages = document.querySelectorAll(".imgSlide");
+
+      const nextImageDelay = 3000;
+      let currentImageCounter = 0;
+
+      slideshowImages[currentImageCounter].style.opacity = 1;
+
+      setInterval(nextImage, nextImageDelay);
+
+      function nextImage() {
+        slideshowImages[currentImageCounter].style.opacity = 0;
+        currentImageCounter =
+          (currentImageCounter + 1) % slideshowImages.length;
+        slideshowImages[currentImageCounter].style.opacity = 1;
+      }
+    </script>
+  </body>
+</html>
