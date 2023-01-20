@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D&V Transport Neuburg an der Donau,Ingolstadt,Augsburg,Transport mobel,Keller aufräumen,Umzughilfe</title>
-    <meta
-      name="description"
-      content="Schnelle, zuverlässige Lieferung direkt bis in deine Wohnung. 
-      Transport Neuburg an der Donau,Ingolstadt,Augsburg,Transport mobel,Keller aufräumen,Umzughilfe"
-    />
-    <meta
-      name="keywords"
-      content="Transport,Neuburg an der Donau,Ingolstadt,Augsburg,Umzughilfe"
-    />
-    <meta name="keywords" content="Lieferservice, Schnelle, München" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="phone-container">
-        <h1>Neuburg an der Donau D&V Transport</h1>
-        <nav>
-          <a href="tel:01736560119"
-            ><img src="./images/phone-image.png" alt="phone image" />0173 65 60
-            119
-          </a>
-        </nav>
-      </div>
-      <img
-        class="moving-van"
-        src="./images/van-image.png"
-        alt="image of a van"
-      />
-    </header>
-    <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&V Transport Neuburg an der Donau,Ingolstadt,Augsburg,Transport mobel,Keller aufräumen,Umzughilfe</title>
+  <meta name="description" content="Schnelle, zuverlässige Lieferung direkt bis in deine Wohnung. 
+      Transport Neuburg an der Donau,Ingolstadt,Augsburg,Transport mobel,Keller aufräumen,Umzughilfe" />
+  <meta name="keywords" content="Transport,Neuburg an der Donau,Ingolstadt,Augsburg,Umzughilfe" />
+  <meta name="keywords" content="Lieferservice, Schnelle, München" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="phone-container">
+      <h1>Neuburg an der Donau D&V Transport</h1>
+      <nav>
+        <a href="tel:01736560119"><img src="./images/phone-image.png" alt="phone image" />0173 65 60
+          119
+        </a>
+      </nav>
+    </div>
+    <img class="moving-van" src="./images/van-image.png" alt="image of a van" />
+  </header>
+  <main>
+    <div class="container">
       <ul>
         <li>
           <img src="./images/whatsapp-icon.png" alt="an descriptiv image" />
@@ -67,54 +59,11 @@
       </ul>
 
       <div class="slideshow-container">
-        <img
-          src="./images/image-1.jpg"
-          alt="image of our van in action"
-          class="imgSlide"
-        />
-        <img
-          src="./images/image-2.jpg"
-          alt="image of our van in action"
-          class="imgSlide"
-        />
-        <img
-          src="./images/image-3.jpg"
-          alt="image of our van in action"
-          class="imgSlide"
-        />
-        <img
-          src="./images/image-4.jpg"
-          alt="image of our van in action"
-          class="imgSlide"
-        />
-        <img
-          src="./images/image-5.jpg"
-          alt="image of our van in action"
-          class="imgSlide"
-        />
-        <img
-          src="./images/image-6.jpg"
-          alt="image of our van in action"
-          class="imgSlide"
-        />
+        <img src="./images/image-1.jpg" id="slide" alt="Slideshow Image">
       </div>
-    </main>
-    <script>
-      const slideshowImages = document.querySelectorAll(".imgSlide");
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
 
-      const nextImageDelay = 3000;
-      let currentImageCounter = 0;
-
-      slideshowImages[currentImageCounter].style.opacity = 1;
-
-      setInterval(nextImage, nextImageDelay);
-
-      function nextImage() {
-        slideshowImages[currentImageCounter].style.opacity = 0;
-        currentImageCounter =
-          (currentImageCounter + 1) % slideshowImages.length;
-        slideshowImages[currentImageCounter].style.opacity = 1;
-      }
-    </script>
-  </body>
 </html>
